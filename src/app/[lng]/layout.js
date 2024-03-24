@@ -4,9 +4,9 @@ import TanstackWrapper from "@/Layout/TanstackWrapper"
 
 export async function generateMetadata() {
   // fetch data
-  const settingData = await fetch(`${process.env.API_PROD_URL}settings`).then((res) => res.json()).catch((err) => console.log("err", err))
+  const settingData = await fetch(`${process.env.NEXT_PUBLIC_API_PROD_URL}settings`).then((res) => res.json()).catch((err) => console.log("err", err))
   return {
-    metadataBase: new URL(process.env.API_PROD_URL),
+    metadataBase: new URL(process.env.NEXT_PUBLIC_API_PROD_URL),
     title: 'Maepui - Admin',
     description: settingData?.values?.general?.site_tagline,
     icons: {

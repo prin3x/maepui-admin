@@ -7,7 +7,7 @@ const nextConfig = {
     
     //  API_PROD_URL: "https://fastkart-admin-json.vercel.app/api/",
 
-    API_PROD_URL: process.env.NEXT_PUBLIC_API_PROD_URL,
+    NEXT_PUBLIC_API_PROD_URL: process.env.NEXT_PUBLIC_API_PROD_URL,
 
     // API_PROD_URL: "https://laravel.pixelstrap.net/fastkart/api",
   },

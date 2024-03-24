@@ -2,7 +2,7 @@ import axios from "axios";
 import getCookie from "../CustomFunctions/GetCookie";
 
 const client = axios.create({
-  baseURL: process.env.API_PROD_URL,
+  baseURL: process.env.NEXT_PUBLIC_API_PROD_URL,
   headers: {
     Accept: "application/json",
   },
