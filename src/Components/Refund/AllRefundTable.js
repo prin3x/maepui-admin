@@ -15,11 +15,11 @@ const AllRefundTable = ({ data, ...props }) => {
         column: [
             // { title: "OrderNumber", apiKey: "order", subKey: ["order_number"] },
             { title: "OrderNumber", apiKey: "order_id" },
-            // { title: "ConsumerName", apiKey: "user", sorting: true, sortBy: "desc", subKey: ["name"] },
-            { title: "ConsumerName", apiKey: "consumer_name", sorting: true, sortBy: "desc" },
+            // { title: "ConsumerName", apiKey: "user", sorting: false, sortBy: "desc", subKey: ["name"] },
+            { title: "ConsumerName", apiKey: "consumer_name", sorting: false, sortBy: "desc" },
             { title: "Reason", apiKey: "reason" },
             { title: "Status", apiKey: "refund_status" },
-            { title: "CreateAt", apiKey: "created_at", sorting: true, sortBy: "desc", type: "date" },
+            { title: "CreateAt", apiKey: "created_at", sorting: false, sortBy: "desc", type: "date" },
         ],
         data: data || []
     };

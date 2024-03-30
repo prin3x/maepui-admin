@@ -25,8 +25,8 @@ const AllProductTable = ({ data, ...props }) => {
     optionHead: { title: 'Action' },
     column: [
       { title: 'Image', apiKey: 'thumbnail', subKey: ['url'], type: 'image', placeHolderImage: placeHolderImage },
-      { title: 'Name', apiKey: 'name', sorting: true, sortBy: 'desc' },
-      { title: 'Price', apiKey: 'price', sorting: true, sortBy: 'desc' },
+      { title: 'Name', apiKey: 'name', sorting: false, sortBy: 'desc' },
+      { title: 'Price', apiKey: 'price', sorting: false, sortBy: 'desc' },
       { title: 'Stock Quantity', apiKey: 'stock_quantity', type: 'stock_quantity' },
       { title: 'Status', apiKey: 'status', type: 'switch' },
     ],

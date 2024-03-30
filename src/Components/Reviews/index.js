@@ -8,8 +8,8 @@ const AllReviewsTable = ({ data, ...props }) => {
             { title: "Image", apiKey: "thumbnail", type: 'image', class: "sm-width" },
             { title: "CustomerName", apiKey: "consumer",  sortBy: "desc", subKey: ["name"] },
             { title: "ProductName", apiKey: "product", subKey: ["name"] },
-            { title: "Rating", apiKey: "rating", type: "rating",sorting: true },
-            { title: "CreateAt", apiKey: "created_at", sorting: true, sortBy: "desc", type: "date" },
+            { title: "Rating", apiKey: "rating", type: "rating",sorting: false },
+            { title: "CreateAt", apiKey: "created_at", sorting: false, sortBy: "desc", type: "date" },
         ],
         data: data || []
     };

@@ -10,8 +10,8 @@ const AllCouponTable = ({ data, ...props }) => {
     noEdit: edit ? false : true,
     optionHead: { title: "Action" },
     column: [
-      { title: "Name", apiKey: "code", sorting: true, sortBy: "desc" },
-      { title: "CreateAt", apiKey: "created_at", sorting: true, sortBy: "desc", type: "date" },
+      { title: "Name", apiKey: "code", sorting: false, sortBy: "desc" },
+      { title: "CreateAt", apiKey: "created_at", sorting: false, sortBy: "desc", type: "date" },
       { title: "Status", apiKey: "status", type: "switch" }
     ],
     data: data || []

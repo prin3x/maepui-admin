@@ -17,7 +17,7 @@ const AllWithdrawRequestTable = ({ data, ...props }) => {
             { title: "ConsumerName", apiKey: "vendor_name" },
             { title: "Amount", apiKey: "amount", type: 'price' },
             { title: "Status", apiKey: "withdrawal_status" },
-            { title: "CreateAt", apiKey: "created_at", sorting: true, sortBy: "desc", type: "date" },
+            { title: "CreateAt", apiKey: "created_at", sorting: false, sortBy: "desc", type: "date" },
         ],
         data: data || []
     };

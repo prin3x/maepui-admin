@@ -18,7 +18,7 @@ const AllOrdersTable = ({ data, ...props }) => {
         optionHead: { title: "Action", type: 'View', redirectUrl: "/order/details", modalTitle: t("Orders") },
         column: [
             { title: "OrderNumber", apiKey: "order_number" },
-            { title: "OrderDate", apiKey: "created_at", sorting: true, sortBy: "desc", type: "date" },
+            { title: "OrderDate", apiKey: "created_at", sorting: false, sortBy: "desc", type: "date" },
             { title: "CustomerName", apiKey: "consumer", subKey: ["name"] },
             { title: "TotalAmount", apiKey: "total", type: 'price' },
             { title: "PaymentStatus", apiKey: "payment_status" },

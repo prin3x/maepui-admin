@@ -3,10 +3,6 @@ import { Input, Label } from 'reactstrap';
 import AttachmentsDropdown from './AttachmentDropdown';
 
 const AttachmentData = ({ state, dispatch, multiple, attachmentsData, refetch, redirectToTabs }) => {
-  // useEffect(() => {
-  //     refetch();
-  // }, []);
-  // Selecting images from media modal
   const ChoseImages = (e, item) => {
     if (multiple) {
       if (!e.target.checked) {

@@ -13,7 +13,7 @@ const AllCommissionTable = ({ data, ...props }) => {
             { title: "StoreName", apiKey: "store", subKey: ["store_name"] },
             { title: "AdminCommission", apiKey: "admin_commission", type: "price" },
             { title: "VendorCommission", apiKey: "vendor_commission", type: "price" },
-            { title: "CreateAt", apiKey: "created_at", sorting: true, sortBy: "desc", type: "date" }
+            { title: "CreateAt", apiKey: "created_at", sorting: false, sortBy: "desc", type: "date" }
         ],
         data: data || []
     };

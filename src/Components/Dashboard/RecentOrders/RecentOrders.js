@@ -21,7 +21,7 @@ const RecentOrders = ({ data, ...props }) => {
     noCustomClass: true,
     column: [
       { title: 'Number', apiKey: 'order_number' },
-      { title: 'Date', apiKey: 'created_at', sorting: true, sortBy: 'desc', type: 'date' },
+      { title: 'Date', apiKey: 'created_at', sorting: false, sortBy: 'desc', type: 'date' },
       { title: 'Name', apiKey: 'consumer', subKey: ['name'] },
       { title: 'Amount', apiKey: 'total', type: 'price' },
       { title: 'Payment', apiKey: 'payment_status' },

@@ -13,9 +13,9 @@ const AllRoles = ({ data, ...props }) => {
     optionHead: { title: "Action" },
     column: [
       { title: "Logo", apiKey: "store_logo", type: 'image' },
-      { title: "StoreName", apiKey: "store_name", sorting: true, sortBy: "desc" },
+      { title: "StoreName", apiKey: "store_name", sorting: false, sortBy: "desc" },
       { title: "Name", apiKey: "name" },
-      { title: "CreateAt", apiKey: "created_at", sorting: true, sortBy: "desc", type: "date" },
+      { title: "CreateAt", apiKey: "created_at", sorting: false, sortBy: "desc", type: "date" },
       { title: "Approved", apiKey: "is_approved", type: 'switch', url: `${store}${Approved}` }
     ],
     data: data || []

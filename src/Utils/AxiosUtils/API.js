@@ -70,7 +70,7 @@ export const checkout = "/checkout";
 // attachment api
 export const attachment = "/media";
 export const createAttachment = "/media";
-export const attachmentDelete = "/media/deleteAll";
+export const attachmentDelete = "/media/bulk-delete";
 
 // Commissions
 export const commissions = '/commissionHistory';

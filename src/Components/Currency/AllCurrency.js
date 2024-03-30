@@ -11,10 +11,10 @@ const AllCurrency = ({ data, ...props }) => {
         noEdit: edit ? false : true,
         optionHead: { title: "Action" },
         column: [
-            { title: "Code", apiKey: "code", sorting: true, sortBy: "desc" },
-            { title: "Symbol", apiKey: "symbol", sorting: true, sortBy: "desc" },
-            { title: "ExchangeRate", apiKey: "exchange_rate", sorting: true, sortBy: "desc" },
-            { title: "CreateAt", apiKey: "created_at", sorting: true, sortBy: "desc", type: "date" },
+            { title: "Code", apiKey: "code", sorting: false, sortBy: "desc" },
+            { title: "Symbol", apiKey: "symbol", sorting: false, sortBy: "desc" },
+            { title: "ExchangeRate", apiKey: "exchange_rate", sorting: false, sortBy: "desc" },
+            { title: "CreateAt", apiKey: "created_at", sorting: false, sortBy: "desc", type: "date" },
             { title: "Status", apiKey: "status", type: "switch" }
         ],
         data: data || []

@@ -10,8 +10,8 @@ const AttributesTable = ({ data, ...props }) => {
     noEdit: edit ? false : true,
     optionHead: { title: "Action" },
     column: [
-      { title: "Name", apiKey: "name", sorting: true, sortBy: "desc" },
-      { title: "CreateAt", apiKey: "created_at", sorting: true, sortBy: "desc", type: "date" }
+      { title: "Name", apiKey: "name", sorting: false, sortBy: "desc" },
+      { title: "CreateAt", apiKey: "created_at", sorting: false, sortBy: "desc", type: "date" }
     ],
     data: data || []
   };

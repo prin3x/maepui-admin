@@ -13,10 +13,10 @@ const AllUsersTable = ({ data, ...props }) => {
     optionHead: { title: "Action" },
     column: [
       { title: "Avatar", apiKey: "profile_image", type: 'image', class: "sm-width" },
-      { title: "Name", apiKey: "name", sorting: true, sortBy: "desc" },
-      { title: "Email", apiKey: "email", sorting: true, sortBy: "desc" },
+      { title: "Name", apiKey: "name", sorting: false, sortBy: "desc" },
+      { title: "Email", apiKey: "email", sorting: false, sortBy: "desc" },
       { title: "Role", apiKey: "role", subKey: ["name"] },
-      { title: "CreateAt", apiKey: "created_at", sorting: true, sortBy: "desc", type: "date" },
+      { title: "CreateAt", apiKey: "created_at", sorting: false, sortBy: "desc", type: "date" },
       { title: "Status", apiKey: "status", type: 'switch' }
     ],
     data: data || []

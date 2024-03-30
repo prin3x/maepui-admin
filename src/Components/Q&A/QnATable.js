@@ -11,7 +11,7 @@ const QnATable = ({ data, ...props }) => {
         optionHead: { title: "Action" },
         column: [
             { title: "Question", apiKey: "title" },
-            { title: "CreateAt", apiKey: "created_at", sorting: true, sortBy: "desc", type: "date" },
+            { title: "CreateAt", apiKey: "created_at", sorting: false, sortBy: "desc", type: "date" },
             { title: "Status", apiKey: "status" }
         ],
         data: data?.data || []
