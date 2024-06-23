@@ -24,10 +24,9 @@ const SettingProvider = (props) => {
 
     // Convert Currency as per Exchange Rate
     const convertCurrency = useCallback((value) => {
-        let position = settingObj?.general?.default_currency?.symbol_position || 'before_price';
-        let symbol = settingObj?.general?.default_currency?.symbol || '$'
+        let position = settingObj?.general?.default_currency?.symbol_position || 'after_price';
+        let symbol = settingObj?.general?.default_currency?.symbol || 'บาท'
         let amount = Number(value)
-        amount = amount * settingObj?.general?.default_currency?.exchange_rate
         if (position == 'before_price') {
             return `${symbol} ${amount.toFixed(2)}`
         } else return `${amount.toFixed(2)} ${symbol}`

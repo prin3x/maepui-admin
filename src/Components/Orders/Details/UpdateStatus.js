@@ -1,30 +1,30 @@
-import SearchableSelectInput from '../../InputFields/SearchableSelectInput'
+import SearchableSelectInput from '../../InputFields/SearchableSelectInput';
 
 const UpdateStatus = ({ orderStatusData, setFieldValue, orderStatus }) => {
+  const onStatusChange = (name, value) => {
+    setFieldValue('order_status', value);
+  };
 
-    const onStatusChange = (name, value) => {
-        setFieldValue('order_status_id', value)
-    }
-    return (
-        <>
-            <SearchableSelectInput
-                nameList={[
-                    {
-                        name: "order_status_id",
-                        notitle: "true",
-                        inputprops: {
-                            name: "order_status_id",
-                            id: "order_status_id",
-                            options: orderStatusData || [],
-                            value: orderStatus ? orderStatus?.name : '',
-                        },
-                        store: "obj",
-                        setvalue: onStatusChange,
-                    },
-                ]}
-            />
-        </>
-    )
-}
+  return (
+    <>
+      <SearchableSelectInput
+        nameList={[
+          {
+            name: 'order_status',
+            notitle: 'true',
+            inputprops: {
+              name: 'order_status',
+              id: 'order_status',
+              options: orderStatusData || [],
+              value: orderStatus || '',
+            },
+            store: 'obj',
+            setvalue: onStatusChange,
+          },
+        ]}
+      />
+    </>
+  );
+};
 
-export default UpdateStatus
+export default UpdateStatus;

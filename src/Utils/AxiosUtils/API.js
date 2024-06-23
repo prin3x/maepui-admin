@@ -16,7 +16,7 @@ export const updateProfilePassword = "/updatePassword";
 export const role = "role";
 
 //users api
-export const user = "user";
+export const user = "users";
 export const UserImportAPI = "user/csv/import"
 export const UserExportAPI = "user/csv/export"
 

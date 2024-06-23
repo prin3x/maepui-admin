@@ -21,7 +21,7 @@ const AttachmentHead = ({ isattachment, state, dispatch, refetch }) => {
     const router = useRouter();
     const { mutate } = useMutation((data) => request({ url: attachmentDelete, data: { ids: data }, method: "post" }), {
         onSuccess: (resData) => {
-            SuccessHandle(resData, router, "en/attachment", "Deleted Sucessfully");
+            SuccessHandle(resData, router, "/attachment", "Deleted Sucessfully");
             resData.status == 200 && dispatch({ type: "DeleteSelectedImage", payload: [] });
             refetch()
         },

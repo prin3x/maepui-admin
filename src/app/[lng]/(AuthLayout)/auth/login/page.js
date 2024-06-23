@@ -20,7 +20,7 @@ const Login = () => {
     <div className="box-wrapper">
       <LoginBoxWrapper>
         <div className="log-in-title">
-          <h3>{t('WelcomeToFastkart')}</h3>
+          <h3>{t('WelcomeToMaepui')}</h3>
           <h4>{t('LogInYourAccount')}</h4>
         </div>
         <div className="input-box">

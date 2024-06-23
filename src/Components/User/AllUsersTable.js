@@ -19,7 +19,7 @@ const AllUsersTable = ({ data, ...props }) => {
       { title: "CreateAt", apiKey: "created_at", sorting: false, sortBy: "desc", type: "date" },
       { title: "Status", apiKey: "status", type: 'switch' }
     ],
-    data: data || []
+    data: data?.data || []
   };
   if (!data) return <Loader />;
   return <>
