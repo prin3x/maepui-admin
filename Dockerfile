@@ -20,7 +20,7 @@ COPY . .
 RUN pnpm run build
 
 # Expose the port your app runs on
-EXPOSE 3000
+EXPOSE 3030
 
 # Define the command to run your app
 CMD ["pnpm", "start"]
