@@ -24,7 +24,7 @@ const RecentOrders = ({ data, ...props }) => {
       { title: 'Date', apiKey: 'created_at', sorting: false, sortBy: 'desc', type: 'date' },
       { title: 'Name', apiKey: 'consumer', subKey: ['name'] },
       { title: 'Amount', apiKey: 'total', type: 'price' },
-      { title: 'Payment', apiKey: 'payment_status' },
+      { title: 'Payment', apiKey: 'payment', subKey: ['status'] },
     ],
     data: data?.data?.slice(0, 6)?.map((elem) => elem) || [],
   };

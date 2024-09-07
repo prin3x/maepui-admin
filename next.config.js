@@ -33,7 +33,8 @@ const nextConfig = {
       },
       {
         protocol: "http",
-        hostname: "127.0.0.1:8000",
+        hostname: "127.0.0.1",
+        port: "8000",
       },
       {
         protocol: "https",
@@ -52,12 +53,16 @@ const nextConfig = {
         hostname: "maepui-core.s3.amazonaws.com",
       },
       {
-        protocol: 'http',
-        hostname: 'maepui-core-dev.s3.amazonaws.com',
+        protocol: "http",
+        hostname: "maepui-core-dev.s3.amazonaws.com",
       },
       {
-        protocol: 'https',
-        hostname: 's3.ap-southeast-1.amazonaws.com',
+        protocol: "https",
+        hostname: "s3.ap-southeast-1.amazonaws.com",
+      },
+      {
+        protocol: "https",
+        hostname: "storage.googleapis.com",
       },
     ],
   },

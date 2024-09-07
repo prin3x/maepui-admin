@@ -10,8 +10,8 @@ const SubmitLoginFunction = async (values) => {
       data: values,
     });
 
-    Cookies.set('access_token', data.access_token);
-    Cookies.set('refresh_token', data.refresh_token);
+    Cookies.set('auth', data.accessToken);
+    Cookies.set('refresh', data.refreshToken);
   } catch (error) {
     console.log('error', error);
   }

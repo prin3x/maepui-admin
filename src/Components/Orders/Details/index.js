@@ -56,7 +56,7 @@ const OrderDetailsContain = ({ updateId }) => {
       <Col xxl="9">
         <div className="mb-4">
           <div className="tracking-panel">
-            <TrackingPanel orderStatusData={orderStatusData} orderStatus={orderStatus} />
+            <TrackingPanel orderData={data} orderStatusData={orderStatusData} orderStatus={orderStatus} />
           </div>
         </div>
         <Col sm="12">

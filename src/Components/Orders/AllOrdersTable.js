@@ -30,7 +30,7 @@ const AllOrdersTable = ({ data, ...props }) => {
     return headerObj?.data?.map((element) => {
       element.order_number = getSpanTag(element.id);
       element.payment_status = element.payment_status ? (
-        <div className={`status-${element?.payment_status.toString().toLowerCase() || ''}`}>
+        <div className={`status-${element?.payment_status?.toString()?.toLowerCase() || ''}`}>
           <span>{element?.payment_status}</span>
         </div>
       ) : (

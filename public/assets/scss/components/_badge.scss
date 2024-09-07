@@ -59,7 +59,8 @@
   }
 }
 
-.status-processing {
+.status-processing,
+.status-waiting {
   span {
     background-color: rgba(#0077b3, 0.15);
     color: #0077b3;

@@ -28,7 +28,7 @@ const CategoryForm = ({ setResetData, updateId, type }) => {
     isLoading,
     refetch,
   } = useQuery([Category, updateId], () => request({ url: `${Category}/${updateId}` }, router), {
-    enabled: true,
+    enabled: Boolean(updateId),
     refetchOnWindowFocus: false,
   });
   useEffect(() => {

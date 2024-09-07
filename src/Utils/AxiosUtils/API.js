@@ -1,5 +1,5 @@
 // authentication
-export const login = "/auth/signin";
+export const login = "/auth/signin-admin";
 export const register = "/auth/register";
 export const forgotPassword = "/auth/forgot-password";
 export const verifyToken = "verify-token";
@@ -8,7 +8,7 @@ export const LogoutAPI = "/logout";
 
 // self data (get)
 export const selfData = "/auth/self";
-export const signinAPI = "/auth/signin";
+export const signinAPI = "/auth/signin-admin";
 export const updateProfile = "/updateProfile";
 export const updateProfilePassword = "/updatePassword";
 

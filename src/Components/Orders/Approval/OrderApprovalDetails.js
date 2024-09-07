@@ -27,7 +27,7 @@ const OrderApprovalDetails = ({ orderId }) => {
   if (!orderDetails || !orderStatus) {
     return <div>Loading...</div>;
   }
-
+console.log(orderDetails)
   return (
     <Col sm="12">
       <div className="order-approval-details">

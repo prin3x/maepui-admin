@@ -60,7 +60,7 @@ const TableWarper = (WrappedComponent) => {
             router,
           ),
         { refetchOnWindowFocus: false, refetchOnMount: false, cacheTime: 0 },
-        { select: (data) => data?.data},
+        { select: (data) => data?.data },
       );
       // To use this function in parent
       useImperativeHandle(ref, () => ({
@@ -68,7 +68,6 @@ const TableWarper = (WrappedComponent) => {
           refetch();
         },
       }));
-
       useEffect(() => {
         (!loading || url) && refetch();
       }, [paginate, page, date, search, loading, sortBy, type, paramsProps ? paramsProps[ifParamsData] : '']);

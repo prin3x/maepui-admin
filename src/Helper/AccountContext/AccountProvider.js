@@ -33,7 +33,10 @@ const AccountProvider = (props) => {
       // decode jwt
       const accountData = jwtDecode(cookie)
 
-      setRole(data?.role?.name);
+      const role = data?.roles?.find((role) => role.name === 'admin');
+      if (role) {
+        setRole(role?.name);
+      }
       setAccountData(accountData);
     }
   }, [isLoading, cookies.auth]);
